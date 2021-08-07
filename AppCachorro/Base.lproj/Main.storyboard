@@ -8,75 +8,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppCachorro" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="View" interfaceStyle="dark" id="BYZ-38-t0r" customClass="ViewController" customModule="AppCachorro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGl-yo-qpc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Tx-kz-p8q">
-                                <rect key="frame" x="65" y="44" width="284" height="404"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P3G-kM-gQY">
-                                <rect key="frame" x="149" y="567" width="116.5" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-O6-hZz">
+                                <rect key="frame" x="107" y="271" width="214" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="vecteezy_heart_1187508.png"/>
                                 <connections>
-                                    <action selector="descobrirIdade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ap-hi-Aal"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXU-qq-oTa">
-                                <rect key="frame" x="113" y="673" width="189" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Descobrir a idade">
-                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="descobrirIdade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOI-tC-GpW"/>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USA-94-os7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik5-oE-8Ah">
-                                <rect key="frame" x="37" y="772" width="340" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL9-SA-rHj">
+                                <rect key="frame" x="6" y="765" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro para descobrir a idade em anos humanos " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fr-90-UwM">
-                                <rect key="frame" x="20" y="431" width="374" height="73"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <color key="tintColor" systemColor="systemGray4Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="Cbx-2L-Ase"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lugar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-WK-ItW">
+                                <rect key="frame" x="20" y="639" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="no(a)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWj-iF-0YE">
+                                <rect key="frame" x="20" y="565" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Prancheta 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kfb-Nt-udC">
+                                <rect key="frame" x="-27" y="277" width="442" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGrayColor"/>
-                        <constraints>
-                            <constraint firstItem="ik5-oE-8Ah" firstAttribute="centerX" secondItem="0fr-90-UwM" secondAttribute="centerX" id="7IR-Z3-azC"/>
-                            <constraint firstItem="0fr-90-UwM" firstAttribute="top" secondItem="0Tx-kz-p8q" secondAttribute="bottom" constant="-17" id="8j5-Z7-Qtj"/>
-                            <constraint firstItem="ik5-oE-8Ah" firstAttribute="top" secondItem="sXU-qq-oTa" secondAttribute="bottom" constant="57" id="BId-hS-i6R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ik5-oE-8Ah" secondAttribute="bottom" constant="90" id="GPQ-nx-qbo"/>
-                            <constraint firstItem="ik5-oE-8Ah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IsP-a1-Q6U"/>
-                            <constraint firstItem="ik5-oE-8Ah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="NmD-gK-Bbd"/>
-                            <constraint firstItem="0fr-90-UwM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PSu-2u-q89"/>
-                            <constraint firstItem="0fr-90-UwM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="431" id="Pxv-Ks-xH5"/>
-                            <constraint firstItem="sXU-qq-oTa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gaK-Na-YSD"/>
-                            <constraint firstItem="ik5-oE-8Ah" firstAttribute="centerX" secondItem="0Tx-kz-p8q" secondAttribute="centerX" id="oNI-jL-UgZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXU-qq-oTa" secondAttribute="trailing" constant="112" id="pTq-85-NdD"/>
-                            <constraint firstItem="P3G-kM-gQY" firstAttribute="top" secondItem="0fr-90-UwM" secondAttribute="bottom" constant="63" id="wuk-To-Cu6"/>
-                            <constraint firstItem="0fr-90-UwM" firstAttribute="leading" secondItem="0Tx-kz-p8q" secondAttribute="leading" constant="-45" id="xbJ-BN-QN5"/>
-                            <constraint firstItem="ik5-oE-8Ah" firstAttribute="centerX" secondItem="P3G-kM-gQY" secondAttribute="centerX" id="z9C-hB-byV"/>
-                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3G9-z2-7D6"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="campoIdadeCachorro" destination="P3G-kM-gQY" id="l9D-Io-3au"/>
-                        <outlet property="legendaResultado" destination="ik5-oE-8Ah" id="UNO-3P-tsd"/>
+                        <outlet property="Action" destination="nL9-SA-rHj" id="gMY-Qt-DRB"/>
+                        <outlet property="Place" destination="Ird-WK-ItW" id="WJB-Ph-niB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,18 +64,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cachorro.png" width="421" height="404"/>
+        <image name="Prancheta 1.png" width="596" height="842"/>
+        <image name="vecteezy_heart_1187508.png" width="1723" height="1431"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemGroupedBackgroundColor">
+        <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

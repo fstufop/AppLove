@@ -16,6 +16,8 @@
 		D409E33E26BA215700ECBE55 /* AppCachorroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409E33D26BA215700ECBE55 /* AppCachorroTests.swift */; };
 		D409E34926BA215700ECBE55 /* AppCachorroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409E34826BA215700ECBE55 /* AppCachorroUITests.swift */; };
 		D409E35726BA254200ECBE55 /* cachorro.png in Resources */ = {isa = PBXBuildFile; fileRef = D409E35626BA254200ECBE55 /* cachorro.png */; };
+		D422487F26BCD887004476E0 /* vecteezy_heart_1187508.png in Resources */ = {isa = PBXBuildFile; fileRef = D422487E26BCD882004476E0 /* vecteezy_heart_1187508.png */; };
+		D422488126BEC7E6004476E0 /* Prancheta 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D422488026BEC7E6004476E0 /* Prancheta 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D409E34826BA215700ECBE55 /* AppCachorroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCachorroUITests.swift; sourceTree = "<group>"; };
 		D409E34A26BA215700ECBE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D409E35626BA254200ECBE55 /* cachorro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cachorro.png; sourceTree = "<group>"; };
+		D422487E26BCD882004476E0 /* vecteezy_heart_1187508.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vecteezy_heart_1187508.png; sourceTree = "<group>"; };
+		D422488026BEC7E6004476E0 /* Prancheta 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Prancheta 1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				D409E35626BA254200ECBE55 /* cachorro.png */,
+				D422487E26BCD882004476E0 /* vecteezy_heart_1187508.png */,
 				D409E32626BA215300ECBE55 /* AppDelegate.swift */,
 				D409E32826BA215300ECBE55 /* SceneDelegate.swift */,
+				D422488026BEC7E6004476E0 /* Prancheta 1.png */,
 				D409E32A26BA215300ECBE55 /* ViewController.swift */,
 				D409E32C26BA215300ECBE55 /* Main.storyboard */,
 				D409E32F26BA215600ECBE55 /* Assets.xcassets */,
@@ -235,9 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D409E35726BA254200ECBE55 /* cachorro.png in Resources */,
+				D422488126BEC7E6004476E0 /* Prancheta 1.png in Resources */,
 				D409E33326BA215600ECBE55 /* LaunchScreen.storyboard in Resources */,
 				D409E33026BA215600ECBE55 /* Assets.xcassets in Resources */,
 				D409E32E26BA215300ECBE55 /* Main.storyboard in Resources */,
+				D422487F26BCD887004476E0 /* vecteezy_heart_1187508.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

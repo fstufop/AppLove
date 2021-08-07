@@ -9,15 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
   
-    @IBOutlet weak var legendaResultado: UILabel!
     
-    @IBOutlet weak var campoIdadeCachorro: UITextField!
+    @IBOutlet weak var Action: UILabel!
     
-    @IBAction func descobrirIdade(_ sender: Any) {
-        
-        let idade = Int(campoIdadeCachorro.text!)!*7
-            legendaResultado.text = "A idade do cão é " + String(idade) + " de idade"
-        
+    @IBOutlet weak var Place: UILabel!
+    
+    @IBAction func button(_ sender: Any) {
+        let action = ["Beijo💋","Massagem💆","Lambida👅","Mordida😬"]
+                let actionShuffle = arc4random_uniform(4)
+                let place = ["Boca👄","Pescoço🙃","Barriga","Costas","Rosto"]
+                let placeShuffle = arc4random_uniform(5)
+                print(actionShuffle)
+                print(placeShuffle)
+        Action.text = String(action[Int(actionShuffle)])
+        Place.text = String(place[Int(placeShuffle)])
+
     }
     
     
