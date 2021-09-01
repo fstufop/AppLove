@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     
     @IBAction func button(_ sender: Any) {
         let action = ["Beijo💋","Massagem💆","Lambida👅","Mordida😬"]
-                let actionShuffle = arc4random_uniform(4)
-                let place = ["Boca👄","Pescoço🙃","Barriga","Costas","Rosto"]
-                let placeShuffle = arc4random_uniform(5)
-                print(actionShuffle)
-                print(placeShuffle)
+        let actionShuffle = arc4random_uniform(4)
+        let place = ["Boca👄","Pescoço🙃","Barriga","Costas","Rosto"]
+        let placeShuffle = arc4random_uniform(5)
+        print(actionShuffle)
+        print(placeShuffle)
         Action.text = String(action[Int(actionShuffle)])
         Place.text = String(place[Int(placeShuffle)])
 
